@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vuI-8e-Trt">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Bold</string>
+            <string>AvenirNext-Italic</string>
+            <string>AvenirNext-MediumItalic</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Page View Controller-->
+        <scene sceneID="z31-NY-URY">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="vuI-8e-Trt" customClass="PageViewController" customModule="Guess_the_Pet" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sEN-xY-s1h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="547" y="1271"/>
+        </scene>
+        <!--Card View Controller-->
+        <scene sceneID="Msq-9R-kjO">
+            <objects>
+                <viewController storyboardIdentifier="CardViewController" id="SAY-5z-4NN" customClass="CardViewController" customModule="Guess_the_Pet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xz1-ct-xGI"/>
+                        <viewControllerLayoutGuide type="bottom" id="zCv-wM-ygW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ykl-dt-KVm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lP7-3S-6mH">
+                                <rect key="frame" x="62.5" y="167" width="250" height="333.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3F-ml-SP5">
+                                        <rect key="frame" x="102.5" y="154.5" width="45" height="25"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Italic" family="Avenir Next" pointSize="18"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="r3F-ml-SP5" secondAttribute="trailing" constant="20" id="3Ol-RA-TdU"/>
+                                    <constraint firstAttribute="height" secondItem="lP7-3S-6mH" secondAttribute="width" multiplier="4:3" id="8CW-O4-Ejd"/>
+                                    <constraint firstAttribute="height" secondItem="lP7-3S-6mH" secondAttribute="width" multiplier="3:4" id="LG1-re-TxK"/>
+                                    <constraint firstAttribute="centerY" secondItem="r3F-ml-SP5" secondAttribute="centerY" id="VT4-Jv-dKL"/>
+                                    <constraint firstItem="r3F-ml-SP5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lP7-3S-6mH" secondAttribute="leading" constant="20" id="kqX-Wi-xMd"/>
+                                    <constraint firstAttribute="centerX" secondItem="r3F-ml-SP5" secondAttribute="centerX" id="tud-Q3-iFL"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="LG1-re-TxK"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="8CW-O4-Ejd"/>
+                                        <include reference="LG1-re-TxK"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="lP7-3S-6mH" secondAttribute="centerX" id="Ysn-62-unj"/>
+                            <constraint firstItem="lP7-3S-6mH" firstAttribute="height" secondItem="ykl-dt-KVm" secondAttribute="height" multiplier="1/2" id="dJ4-Jy-NBi"/>
+                            <constraint firstAttribute="centerY" secondItem="lP7-3S-6mH" secondAttribute="centerY" id="fbt-IU-jML"/>
+                            <constraint firstItem="lP7-3S-6mH" firstAttribute="width" secondItem="ykl-dt-KVm" secondAttribute="width" multiplier="1/2" id="iD5-mJ-Pp3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Uel-4V-e5h"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="iD5-mJ-Pp3"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="iD5-mJ-Pp3"/>
+                                <exclude reference="dJ4-Jy-NBi"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="cardView" destination="lP7-3S-6mH" id="COn-aJ-nWm"/>
+                        <outlet property="titleLabel" destination="r3F-ml-SP5" id="pkV-zT-sf3"/>
+                        <segue destination="dE9-Dk-Hch" kind="presentation" identifier="revealSegue" id="vFt-JX-oHQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ovE-W8-cvI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1352" y="1271"/>
+        </scene>
+        <!--Reveal View Controller-->
+        <scene sceneID="4UR-ls-I2g">
+            <objects>
+                <viewController storyboardIdentifier="RevealViewController" id="dE9-Dk-Hch" customClass="RevealViewController" customModule="Guess_the_Pet" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NUj-ns-FxF"/>
+                        <viewControllerLayoutGuide type="bottom" id="CFR-Xa-wkC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8WF-cf-gQh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOP-yJ-zNZ">
+                                <rect key="frame" x="147.5" y="626" width="80" height="33"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
+                                <state key="normal" title="Start Over!">
+                                    <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissPressedWithSender:" destination="dE9-Dk-Hch" eventType="touchUpInside" id="TYm-h6-hYU"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BLv-rO-gKR">
+                                <rect key="frame" x="0.0" y="83.5" width="375" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="BLv-rO-gKR" secondAttribute="height" multiplier="3:4" id="Q0e-0I-CEf"/>
+                                    <constraint firstAttribute="height" secondItem="BLv-rO-gKR" secondAttribute="width" multiplier="3:4" id="vtP-uI-5lZ"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="vtP-uI-5lZ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="vtP-uI-5lZ"/>
+                                        <exclude reference="Q0e-0I-CEf"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnG-zY-s8r">
+                                <rect key="frame" x="166" y="51.5" width="43" height="24"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-MediumItalic" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BLv-rO-gKR" firstAttribute="top" secondItem="xnG-zY-s8r" secondAttribute="bottom" constant="8" id="1TU-3K-7cx"/>
+                            <constraint firstAttribute="centerX" secondItem="BLv-rO-gKR" secondAttribute="centerX" id="3FL-oK-CwJ"/>
+                            <constraint firstItem="BLv-rO-gKR" firstAttribute="width" secondItem="8WF-cf-gQh" secondAttribute="width" multiplier="1/2" id="3yu-ux-t18"/>
+                            <constraint firstAttribute="centerX" secondItem="yOP-yJ-zNZ" secondAttribute="centerX" id="MBU-Ck-0id"/>
+                            <constraint firstAttribute="centerY" secondItem="BLv-rO-gKR" secondAttribute="centerY" id="OWR-ys-A55"/>
+                            <constraint firstAttribute="centerX" secondItem="xnG-zY-s8r" secondAttribute="centerX" id="igC-0R-Oaz"/>
+                            <constraint firstItem="BLv-rO-gKR" firstAttribute="height" secondItem="8WF-cf-gQh" secondAttribute="height" multiplier="3/4" id="r2A-aS-CtM"/>
+                            <constraint firstItem="CFR-Xa-wkC" firstAttribute="top" secondItem="yOP-yJ-zNZ" secondAttribute="bottom" constant="8" symbolic="YES" id="twF-d5-0X6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wNq-OC-pCe"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3yu-ux-t18"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="r2A-aS-CtM"/>
+                                <include reference="3yu-ux-t18"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="BLv-rO-gKR" id="DK0-5T-1vr"/>
+                        <outlet property="titleLabel" destination="xnG-zY-s8r" id="o1P-oq-rmY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ADa-J1-kj2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2110" y="1271"/>
+        </scene>
+    </scenes>
+</document>
